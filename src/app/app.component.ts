@@ -1,22 +1,22 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   myStyle: object = {};
   myParams: object = {};
-  width: number = 100;
-  height: number = 100;
+  width = 100;
+  height = 100;
 
   ngOnInit() {
     this.myStyle = {
-      position: "fixed",
-      width: "100%",
-      height: "100%",
-      "z-index": -1,
+      position: 'fixed',
+      width: '100%',
+      height: '100%',
+      'z-index': -1,
       top: 0,
       left: 0,
       right: 0,
@@ -29,10 +29,10 @@ export class AppComponent {
           value: 200,
         },
         color: {
-          value: "#ff0000",
+          value: '#000',
         },
         shape: {
-          type: "triangle",
+          type: 'triangle',
         },
       },
     };
